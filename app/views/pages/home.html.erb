@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+</head>
+<body>
+	<center>
+		<h3>Homepage</h3></center>
+		<% if session[:user_id] = nil %>
+		<%= link_to 'logout', logout_path, method: :delete,data: {confirm: 'Do you Want to logout?'} %><br>
+		<% else %>
+		<%= link_to 'Register', new_user_path %>   ||
+		<%= link_to 'login',  login_path %><br>
+		<% end %>
+	</body>
+	</html>

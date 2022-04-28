@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+</head>
+<body>
+	<%= link_to 'logout', logout_path, method: :delete,data: {confirm: 'Do you Want to logout?'} %>
+<center>
+<h4>Welcome <%= @user.email %></h4>
+<h4>Have Fun</h4>
+</center>
+</body>
+</html>
